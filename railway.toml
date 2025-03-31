@@ -1,0 +1,17 @@
+[project]
+name = "carecommerce"
+
+[database]
+name = "postgres"
+size = "hobby-dev"
+
+[env]
+file = ".railway.env"
+
+[build]
+image = "node:18-alpine"
+command = "npm install && npm run build"
+
+[start]
+command = "npm start"
+port = 9000
