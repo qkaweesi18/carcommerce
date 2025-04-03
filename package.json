@@ -19,6 +19,7 @@
     "@medusajs/event-bus-local": "^1.9.7",
     "@medusajs/event-bus-redis": "^1.8.10",
     "@medusajs/file-local": "^1.0.2",
+    "@medusajs/framework": "^2.6.1",
     "@medusajs/medusa": "^1.18.1",
     "@medusajs/modules-sdk": "^1.11.0",
     "@medusajs/utils": "^1.10.1",
