@@ -14,5 +14,4 @@ export default defineConfig({
       cookieSecret: process.env.COOKIE_SECRET
     }
   }
-  // Remove the "admin: { disable: true }" line to enable the admin UI
 })
