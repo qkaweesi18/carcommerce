@@ -31,9 +31,12 @@
     "typescript": "^5.3.3"
   },
   "scripts": {
-    "build": "npx tsc -p tsconfig.json && medusa build",
+    "build": "tsc --project tsconfig.json && medusa build",
     "seed": "medusa-admin seed --admin-email admin@medusa.com --admin-password supersecret",
     "start": "medusa start",
     "dev": "medusa develop"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14"
   }
 }
