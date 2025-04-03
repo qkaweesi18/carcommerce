@@ -24,9 +24,9 @@
     "@medusajs/utils": "^1.10.1"
   },
   "scripts": {
-    "build": "npx medusa build",
-    "seed": "npx medusa exec ./src/scripts/seed.ts",
-    "start": "npx medusa migrations run && npx medusa start",
-    "dev": "npx medusa develop"
+    "build": "tsc -p .",
+    "seed": "medusa-admin seed --admin-email admin@medusa.com --admin-password supersecret",
+    "start": "medusa develop",
+    "dev": "medusa develop"
   }
 }
