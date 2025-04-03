@@ -13,9 +13,9 @@
     "medusa"
   ],
   "scripts": {
-    "build": "node node_modules/@medusajs/cli/bin/medusa.js build",
-    "seed": "node node_modules/@medusajs/cli/bin/medusa.js exec ./src/scripts/seed.ts",
-    "start": "node node_modules/@medusajs/cli/bin/medusa.js db:migrate && node node_modules/@medusajs/cli/bin/medusa.js start",
-    "dev": "node node_modules/@medusajs/cli/bin/medusa.js develop"
+    "build": "npx medusa build",
+    "seed": "npx medusa exec ./src/scripts/seed.ts",
+    "start": "npx medusa db:migrate && npx medusa start",
+    "dev": "npx medusa develop"
   }
 }
