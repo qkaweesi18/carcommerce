@@ -1,8 +1,6 @@
-import { loadEnv, defineConfig } from '@medusajs/medusa/dist/utils'
+import { ConfigModule } from '@medusajs/medusa/dist/types/global'
 
-loadEnv(process.env.NODE_ENV || 'development', process.cwd())
-
-export default defineConfig({
+const config: ConfigModule = {
   projectConfig: {
     databaseUrl: process.env.DATABASE_URL,
     workerMode: "shared",
@@ -22,4 +20,6 @@ export default defineConfig({
       }
     }
   ]
-})
+}
+
+export default config

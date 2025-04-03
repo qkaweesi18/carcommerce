@@ -20,7 +20,7 @@
     "@medusajs/event-bus-redis": "^1.8.10",
     "@medusajs/file-local": "^1.0.2",
     "@medusajs/framework": "^2.6.1",
-    "@medusajs/medusa": "^1.18.1",
+    "@medusajs/medusa": "^1.18.0",
     "@medusajs/modules-sdk": "^1.11.0",
     "@medusajs/utils": "^1.10.1",
     "@types/ioredis-mock": "^8.2.5",
@@ -38,6 +38,7 @@
     "dev": "medusa develop"
   },
   "devDependencies": {
-    "@types/jest": "^29.5.14"
+    "@types/jest": "^29.5.14",
+    "@medusajs/test-utils": "^1.0.0"
   }
 }
