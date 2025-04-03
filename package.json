@@ -31,7 +31,7 @@
     "typescript": "^5.3.3"
   },
   "scripts": {
-    "build": "medusa build",
+    "build": "tsc -p tsconfig.json && tsc medusa-config.ts --outDir .medusa/server && medusa build",
     "seed": "medusa-admin seed --admin-email admin@medusa.com --admin-password supersecret",
     "start": "medusa start",
     "dev": "medusa develop"
