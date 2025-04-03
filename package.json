@@ -13,12 +13,12 @@
     "medusa"
   ],
   "scripts": {
-    "build": "medusa build",
+    "build": "medusa build && medusa admin build",
     "seed": "medusa exec ./src/scripts/seed.ts",
-    "start": "medusa db:migrate && medusa start",
+    "start": "medusa start",
     "dev": "medusa develop",
     "predeploy": "medusa db:migrate",
-    "postinstall": "medusa build"
+    "postinstall": "medusa build && medusa admin build"
   },
   "dependencies": {
     "@babel/core": "^7.24.0",
