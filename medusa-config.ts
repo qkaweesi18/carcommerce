@@ -5,18 +5,14 @@ loadEnv(process.env.NODE_ENV || 'development', process.cwd())
 export default defineConfig({
   projectConfig: {
     databaseUrl: process.env.DATABASE_URL,
-    workerMode: (process.env.MEDUSA_WORKER_MODE as "shared" | "worker" | "server") || "shared",
+    workerMode: "shared",
     http: {
-      storeCors: process.env.STORE_CORS || "*",
-      adminCors: process.env.ADMIN_CORS || "*",
-      authCors: process.env.AUTH_CORS || "*",
-      jwtSecret: process.env.JWT_SECRET || "supersecret",
-      cookieSecret: process.env.COOKIE_SECRET || "supersecret",
+      storeCors: "*",
+      adminCors: "*",
+      authCors: "*",
+      jwtSecret: process.env.JWT_SECRET,
+      cookieSecret: process.env.COOKIE_SECRET
     }
-  },
-  modules: [
-    {
-      resolve: "./src/modules/brand",
-    }
-  ]
+  }
+  // Remove the "admin: { disable: true }" line to enable the admin UI
 })
